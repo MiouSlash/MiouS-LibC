@@ -1,11 +1,11 @@
 ##
-## EPITECH PROJECT, 2021
-## Makefile
+## EPITECH PROJECT, 2022
+## MiouS-LibC
 ## File description:
-## compile *.c libmy
+## Makefile
 ##
 
-SRC	:=	$(shell find sources/print_utils -type f -name "*.c")
+SRC	:=	$(shell find sources/ -type f -name "*.c")
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -18,8 +18,9 @@ OBJ	=	$(SRC:.c=.o)
 all:    $(NAME)
 
 $(NAME):	$(OBJ)
-	gcc -Werror -Wextra -I ./includes $(SRC)
-	ar rc libmy.a $(OBJ)
+	gcc -Werror -Wextra -c -I /includes $(SRC)
+	ar rcs libmy.a $(OBJ)
+	rm -f ./*.o
 
 clean:
 	rm -f $(OBJ)

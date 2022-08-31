@@ -5,7 +5,7 @@
 ** revstr
 */
 
-#include "lib.h"
+#include "../../includes/lib.h"
 
 char *revstr(char *str)
 {

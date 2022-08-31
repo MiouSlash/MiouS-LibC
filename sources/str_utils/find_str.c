@@ -5,7 +5,8 @@
 ** find_str
 */
 
-#include "lib.h"
+#include "../../includes/lib.h"
+
 
 bool find_str(char *to_find, char *to_look)
 {

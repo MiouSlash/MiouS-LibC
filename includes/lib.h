@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2022
-** LIB
+** MiouS-LibC
 ** File description:
 ** lib
 */
@@ -9,6 +9,8 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 #ifndef LIB_H_
     #define LIB_H_

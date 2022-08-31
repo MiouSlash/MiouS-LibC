@@ -5,7 +5,7 @@
 ** printf
 */
 
-#include "lib.h"
+#include "../../includes/lib.h"
 
 struct stock_s {
     int d;
