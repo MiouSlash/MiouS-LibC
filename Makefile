@@ -9,6 +9,8 @@ SRC	:=	$(shell find sources/ -type f -name "*.c")
 
 OBJ	=	$(SRC:.c=.o)
 
+TESTS := $(shell find tests/ -type f -name "*.c")
+
 NAME	=	libmy.a
 
 MYLIB	=	-L ./libmy.a
@@ -31,8 +33,8 @@ fclean:	clean
 
 re:	fclean all
 
-unit_test: $(SRC_TESTS)
-	gcc -Werror -Wextra -o unit_test $(SRC_TESTS) tests/test.c $(MYLIB) --coverage -lcriterion
+unit_test: $(OBJ)
+	gcc -Werror -Wextra -o unit_test $(TESTS) $(MYLIB) --coverage -lcriterion --verbose
 
 tests_run: unit_test
 	./unit_test

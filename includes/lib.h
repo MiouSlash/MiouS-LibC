@@ -28,4 +28,6 @@ int my_printf(char *format, ...);
 int my_put_bin(int nb);
 int my_put_octal(int nb);
 
+
+
 #endif /* !LIB_H_ */
