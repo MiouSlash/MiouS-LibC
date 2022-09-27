@@ -27,7 +27,8 @@ int my_put_nbr_hexa(int nb);
 int my_printf(char *format, ...);
 int my_put_bin(int nb);
 int my_put_octal(int nb);
-
-
+char *my_strdup(char const *src);
+void my_memcpy(void *dest, void *src, size_t n);
+void *my_realloc(void *ptr, size_t originalLength, size_t newLength);
 
 #endif /* !LIB_H_ */

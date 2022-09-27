@@ -5,6 +5,7 @@
 ** output
 */
 
+#include "../../includes/lib.h"
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
 

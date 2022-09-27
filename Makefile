@@ -20,7 +20,7 @@ OBJ	=	$(SRC:.c=.o)
 all:    $(NAME)
 
 $(NAME):	$(OBJ)
-	gcc -Werror -Wextra -c -I /includes $(SRC)
+	gcc -Werror -Wextra -c -I ./includes $(SRC)
 	ar rcs libmy.a $(OBJ)
 	rm -f ./*.o
 
@@ -34,7 +34,7 @@ fclean:	clean
 re:	fclean all
 
 unit_test: $(OBJ)
-	gcc -Werror -Wextra -o unit_test $(TESTS) $(MYLIB) --coverage -lcriterion --verbose
+	gcc -Werror -Wextra -o unit_test $(TESTS) $(MYLIB) --coverage -lcriterion
 
 tests_run: unit_test
 	./unit_test
