@@ -30,5 +30,11 @@ int my_put_octal(int nb);
 char *my_strdup(char const *src);
 void my_memcpy(void *dest, void *src, size_t n);
 void *my_realloc(void *ptr, size_t originalLength, size_t newLength);
+void free_tab(char **to_free);
+char *my_strcat(char *dest, char *src);
+int my_strcmp(char *s1, char *s2);
+char *my_strcpy(char *dest, char const *src);
+int my_show_word_array(char *const *tab);
+bool is_alphanum(const char c);
 
 #endif /* !LIB_H_ */

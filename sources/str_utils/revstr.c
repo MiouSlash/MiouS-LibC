@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2022
-** palindrome
+** MiouS-LibC
 ** File description:
 ** revstr
 */

@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2022
-** calendar
+** MiouS-LibC
 ** File description:
 ** find_str
 */
