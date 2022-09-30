@@ -9,8 +9,8 @@
 
 char *my_strcat(char *dest, char *src)
 {
-    char *res;
-    int i;
+    char *res = NULL;
+    int i = 0;
     int len = my_strlen(dest) + my_strlen(src);
 
     res = malloc(sizeof(char) * (len + 1));
@@ -21,5 +21,5 @@ char *my_strcat(char *dest, char *src)
     for (int j = 0; src[j] != '\0'; j++, i++)
         res[i] = src[j];
     res[i] = '\0';
-    return (res);
+    return res;
 }

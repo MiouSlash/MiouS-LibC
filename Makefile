@@ -13,7 +13,7 @@ TESTS := $(shell find tests/ -type f -name "*.c")
 
 NAME	=	libmy.a
 
-MYLIB	=	-L ./libmy.a
+MYLIB	=	-L. -l:libmy.a
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -33,7 +33,7 @@ fclean:	clean
 
 re:	fclean all
 
-unit_test: $(OBJ)
+unit_test: $(NAME)
 	gcc -Werror -Wextra -o unit_test $(TESTS) $(MYLIB) --coverage -lcriterion
 
 tests_run: unit_test

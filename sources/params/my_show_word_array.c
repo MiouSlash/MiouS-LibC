@@ -5,6 +5,8 @@
 ** my_show_word_array
 */
 
+#include "../../includes/lib.h"
+
 int my_show_word_array(char *const *tab)
 {
     if (!tab)
